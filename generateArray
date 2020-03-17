@@ -1,0 +1,90 @@
+var fileService = require('./service');
+var cheerio = require('cheerio')
+
+const COL_THRESHOLD = 3;
+
+(async () => {
+    let file = await fileService.readFile('./generate/generate.html')
+    file = file.toString()
+    let $ = cheerio.load(file)
+   // console.log($('table').children('tbody'))
+    var tbodies = $('table').children('tbody')
+    var output = []
+    tbodies.each(index => {
+        var table = buildTableContent(tbodies[index])
+        output.push(table)
+
+    })
+    console.log(output)
+    await fileService.createFile('./outputJSON.json', JSON.stringify(output))
+   // console.log($.html())
+
+   function buildTableContent(table) {
+    var headers = []
+    var rows = []
+    $(table).find('tr').each((idx, row) => {
+      if(idx !== 0) {
+        rows.push(buildRow(row, headers))
+      } else {
+          $(row).find('td').each((idx, row) => {
+              headers.push($(row).text())
+          })
+      }
+    })
+    return rows
+
+    
+    function buildRow(row, headers) {
+        var engineName
+        var outPut = []
+        $(row).find('td').each((idx, column) => {
+            if(idx == 0) {
+                engineName = $(column).text()
+            } else {
+                outPut.push({
+                    engineName,
+                    header : headers[idx],
+                    content : $(column).text(),
+                    isRed : column.attribs.style && column.attribs.style.indexOf('red') === -1
+                })
+            }
+        })
+        return outPut
+    }
+}
+
+function filterTable(table) {
+   // console.log(table)
+  $(table).find('tr').each((idx, row) => {
+    if(idx !== 0) {
+      filterRow(row)
+    } else {
+   removeColumns(row, COL_THRESHOLD)
+    }
+  })
+
+
+  
+
+  function filterRow(row) {
+  removeColumns(row, COL_THRESHOLD)
+
+    $(row).find('td').each((idx, el) => {
+        //console.log(el)
+      if(idx !== 0 && el.attribs.style && el.attribs.style.indexOf('red') === -1) {
+        $(el).addClass('toRemove')
+      }
+    })
+  }
+}
+
+
+function removeColumns(row, threshold) {  
+    $(row).find('td').each((idx, row) => {
+    if(idx > threshold) {
+        $(row).addClass('toRemove')
+    }
+  }) 
+}
+})()
+ 

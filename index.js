@@ -44,4 +44,3 @@ function removeColumns(row, threshold) {
   }) 
 }
 })()
- 
