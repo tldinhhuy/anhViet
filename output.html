@@ -1,0 +1,2869 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>OPSWAT - Monitoring engine online and offline update</title>
+<style type="text/css">
+
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+table { 
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+td {
+	padding: 7px;
+}
+
+td:nth-child(n+2){
+	text-align: center;
+}
+
+.border_right_bottom{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.border_top_left{
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.style_G{
+	background-color:#0C6;
+	color:#fff;
+}
+.style_S{
+	background-color:#FF9;
+	color:#000;
+}
+.style_R{
+	background-color:#F00;
+	color:#FFF;
+}
+.header{
+	background-color:#09F;
+	font-weight:bold;
+	color:#FFF;
+}
+</style></head>
+
+<body>
+<h1>Engine online and offline update summary</h1>
+<div style="padding-bottom:10px">Generated at Sun Mar 15 00:00:31 2020</div>
+<div style="\&quot;padding-top:10px\&quot;"><b>Total Number of Engine Not Up To Date</b></div>
+<table class="border_top_left">
+	<tbody id="sum-not-update">
+		<tr>
+			<td class="header border_right_bottom">Server Name</td>
+			<td class="header border_right_bottom">03-15</td>
+<td class="header border_right_bottom">03-14</td>
+<td class="header border_right_bottom">03-13</td>
+
+
+
+
+
+
+
+
+
+
+
+		</tr>
+		
+		<tr><td class="border_right_bottom"><b>V4 Online Windows</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tr>
+<tr><td class="border_right_bottom"><b>V4 Offline Windows</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tr>
+<tr><td class="border_right_bottom"><b>V4 Online Linux</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tr>
+<tr><td class="border_right_bottom"><b>V3 Online</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tr>
+<tr><td class="border_right_bottom"><b>V3 Offline</b></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tr>
+		
+		<tr>
+			<td class="border_right_bottom"><b>Total</b></td>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</tr>
+	</tbody>
+</table>
+<br>
+
+
+<div style="padding-bottom:10px"><b><br><br>Note:<br>- For validator 30, general rule is: if engine&apos;s definition time is 2 or more days old, and hasn&apos;t changed from previous day&apos;s result, it will be marked as red.</b><br><b>- For other servers, if engine&apos;s definition time is more than 2 days old, and hasn&apos;t changed from previous day&apos;s result, it wil be marked as red.</b><br><b>- Certain engine may have exceptions, e.g. Total Defense doesn&apos;t update during weekend, monitor will skip Total Defense during weekend</b></div><br>
+<table class="border_top_left">
+<tbody><tr>
+  <td class="header border_right_bottom"><b>Engine Name</b></td>
+  <td class="header border_right_bottom"><b>Update Frequency/exception</b></td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Avira</b></td>
+  <td class="border_right_bottom">update every other day</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>AVG</b></td>
+  <td class="border_right_bottom">update every other day</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Systweak</b></td>
+  <td class="border_right_bottom">update every other day</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Symantec</b></td>
+  <td class="border_right_bottom">update every other day</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Trend Micro</b></td>
+  <td class="border_right_bottom">update every other day</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Trend Micro House Call</b></td>
+  <td class="border_right_bottom">update every other day</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Zillya!</b></td>
+  <td class="border_right_bottom">update every other day</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>nProtect</b></td>
+  <td class="border_right_bottom">no update on weekend</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>TACHYON</b></td>
+  <td class="border_right_bottom">no update on weekend</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>NetGate</b></td>
+  <td class="border_right_bottom">update once a week</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Stopzilla</b></td>
+  <td class="border_right_bottom">update every 7 days</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Xvirus Personal Guard</b></td>
+  <td class="border_right_bottom">update every 7 days</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Dr.Web Gateway</b></td>
+  <td class="border_right_bottom">update every 7 days</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Quick Heal</b></td>
+  <td class="border_right_bottom">update every other day. ignore Sunday</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Total Defense</b></td>
+  <td class="border_right_bottom">no update on weekend and ignore Monday</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>VirusBlokAda</b></td>
+  <td class="border_right_bottom">no update on weekend and ignore Monday</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Vir.ITeXplorer</b></td>
+  <td class="border_right_bottom">no update on weekend and ignore Monday</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Agnitum</b></td>
+  <td class="border_right_bottom">update every 7 days. If engine is not up to date, please check <a href="http://uc.agnitum.com/vbfiles/">http://uc.agnitum.com/vbfiles/</a>, last modifed of vdb.xml file</td>
+</tr>
+<tr>
+  <td class="border_right_bottom"><b>Filseclab</b></td>
+  <td class="border_right_bottom">update every 5 days. If engine is not up to date, please check <a href="http://www.filseclab.com/en-us/downloads.htm">http://www.filseclab.com/en-us/downloads.htm</a>, definition release date, to determine if it is vendor delay</td>
+</tr>
+</tbody></table>
+<br>
+
+<h2>Monitoring V4 update</h2>
+<div id="v4-update">
+	
+<div style="padding-top:10px">
+	<b>V4 Online Windows</b>
+	<font color="red">
+		<b>Totally 1 engines are not up to date</b>
+	</font>
+</div>
+
+<table class="border_top_left">
+	<tbody>
+		<tr>
+			<td class="header border_right_bottom">Engine Name</td>
+			<td class="header border_right_bottom">03-15</td>
+<td class="header border_right_bottom">03-14</td>
+<td class="header border_right_bottom">03-13</td>
+
+
+
+
+
+
+
+
+
+
+
+		</tr>
+		
+		<tr>
+			<td class="border_right_bottom"><b>Aegislab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ahnlab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Antiy</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Avira</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Bitdefender</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ByteHero</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ClamAV</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Cyren</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Emsisoft</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-13</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ESET</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Filseclab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Huorong</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ikarus</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>K7</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Kaspersky</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Lavasoft</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>McAfee</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Nano</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>NETGATE</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Quickheal</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Sophos</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Symantec</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Systweak</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TACHYON</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Total Defense</b></td>
+			
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-12</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Trend Micro</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Trend Micro House Call</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Vir.IT eXplorer</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>VirusBlokAda</b></td>
+			
+			
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-02</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Xvirus Personal Guard</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Zillya</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+	</tbody>
+</table>
+
+<div style="padding-top:10px">
+	<b>V4 Offline Windows</b>
+	<font color="red">
+		<b>Totally 3 engines are not up to date</b>
+	</font>
+</div>
+
+<table class="border_top_left">
+	<tbody>
+		<tr>
+			<td class="header border_right_bottom">Engine Name</td>
+			<td class="header border_right_bottom">03-15</td>
+<td class="header border_right_bottom">03-14</td>
+<td class="header border_right_bottom">03-13</td>
+
+
+
+
+
+
+
+
+
+
+
+		</tr>
+		
+		<tr>
+			<td class="border_right_bottom"><b>Aegislab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ahnlab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Antiy</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Avira</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Bitdefender</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-11</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-11</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ByteHero</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ClamAV</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Cyren</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Emsisoft</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-13</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ESET</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Filseclab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Huorong</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ikarus</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>K7</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Kaspersky</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>McAfee</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-03</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-03</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-03</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Microsoft Security Essentials</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Nano</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>NETGATE</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Quickheal</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Sophos</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Symantec</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Systweak</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TACHYON</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Total Defense</b></td>
+			
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-12</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Trend Micro</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Trend Micro House Call</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Vir.IT eXplorer</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>VirusBlokAda</b></td>
+			
+			
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-02</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Xvirus Personal Guard</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Zillya</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+	</tbody>
+</table>
+
+<div style="padding-top:10px">
+	<b>V4 Online Linux</b>
+	<font color="red">
+		<b>Totally 2 engines are not up to date</b>
+	</font>
+</div>
+
+<table class="border_top_left">
+	<tbody>
+		<tr>
+			<td class="header border_right_bottom">Engine Name</td>
+			<td class="header border_right_bottom">03-15</td>
+<td class="header border_right_bottom">03-14</td>
+<td class="header border_right_bottom">03-13</td>
+
+
+
+
+
+
+
+
+
+
+
+		</tr>
+		
+		<tr>
+			<td class="border_right_bottom"><b>Ahnlab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Avira</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Bitdefender</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ClamAV</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Clamav</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Cyren</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ESET</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">01-01</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ikarus</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>K7</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Kaspersky</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>McAfee</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-12</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Nano</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>QuickHeal</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Sophos</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Tachyon</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ThreatTrack</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Total Defense</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>VirusBlokAda</b></td>
+			
+			
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-02</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+<h2>Monitoring V3 update</h2>
+<div id="v3-update">
+	
+<div style="padding-top:10px">
+	<b>V3 Online</b>
+	<font color="red">
+		<b>Totally 2 engines are not up to date</b>
+	</font>
+</div>
+
+<table class="border_top_left">
+	<tbody>
+		<tr>
+			<td class="header border_right_bottom">Engine Name</td>
+			<td class="header border_right_bottom">03-15</td>
+<td class="header border_right_bottom">03-14</td>
+<td class="header border_right_bottom">03-13</td>
+
+
+
+
+
+
+
+
+
+
+
+		</tr>
+		
+		<tr>
+			<td class="border_right_bottom"><b>AegisLab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ahnlab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Antiy</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Avira</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>BitDefender</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ByteHero</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ClamAV</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Cyren</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Emsisoft</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-13</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ESET</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Filseclab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Huorong</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ikarus</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>K7</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Kaspersky</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Lavasoft</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>McAfee</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>MicrosoftSecurityEssentials</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>NANOAV</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>NetGate</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>QuickHeal</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Sophos</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Symantec</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Systweak</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TACHYON</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TotalDefense</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TrendMicro</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TrendMicroHouseCall</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Vir.ITeXplorer</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>VirusBlokAda</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">02-19</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">02-19</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">02-19</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>XvirusPersonalGuard</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Zillya!</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+	</tbody>
+</table>
+
+<div style="padding-top:10px">
+	<b>V3 Offline</b>
+	<font color="red">
+		<b>Totally 1 engines are not up to date</b>
+	</font>
+</div>
+
+<table class="border_top_left">
+	<tbody>
+		<tr>
+			<td class="header border_right_bottom">Engine Name</td>
+			<td class="header border_right_bottom">03-15</td>
+<td class="header border_right_bottom">03-14</td>
+<td class="header border_right_bottom">03-13</td>
+
+
+
+
+
+
+
+
+
+
+
+		</tr>
+		
+		<tr>
+			<td class="border_right_bottom"><b>AegisLab</b></td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-05</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-05</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-05</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ahnlab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Antiy</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Avira</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>BitDefender</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ByteHero</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ClamAV</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Cyren</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Emsisoft</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>ESET</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Filseclab</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Huorong</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Ikarus</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>K7</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Kaspersky</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Lavasoft</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>McAfee</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>MicrosoftSecurityEssentials</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>NANOAV</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>NetGate</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>QuickHeal</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Sophos</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Symantec</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Systweak</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TACHYON</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TotalDefense</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TrendMicro</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>TrendMicroHouseCall</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Vir.ITeXplorer</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>VirusBlokAda</b></td>
+			
+			<td class="border_right_bottom" style="color: white; background-color: red;">02-19</td>
+			<td class="border_right_bottom" style="color: white; background-color: red;">02-19</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>XvirusPersonalGuard</b></td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+		<tr>
+			<td class="border_right_bottom"><b>Zillya!</b></td>
+			
+			<td class="border_right_bottom" style="color: white; background-color: red;">03-11</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+</body></html>

@@ -1,0 +1,25 @@
+{
+  "name": "anhviet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tldinhhuy/anhViet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tldinhhuy/anhViet/issues"
+  },
+  "homepage": "https://github.com/tldinhhuy/anhViet#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^8.1.0",
+    "fse": "^4.0.1",
+    "jquery": "^3.4.1"
+  }
+}
